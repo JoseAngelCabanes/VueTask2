@@ -1,12 +1,16 @@
 const app = Vue.createApp({
     data() {
         return {
-            userName: ''
+            userNameA: '',
+            userNameB: '',
         }
     },
     methods: {
-        userOutput(event) {
-            this.userName = event.target.value
+        userOutputA(event) {
+            this.userNameA = event.target.value
+        },
+        userOutputB(event) {
+            this.userNameB = event.target.value
         },
         showAlert() {
             alert('Nice job!')
